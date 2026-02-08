@@ -37,15 +37,15 @@ Follow these steps to get CORTEX-IP_intel running on your system:
 2. **Create & Activate Virtual Environment:**
       * **Windows:**
 
-         python -m venv .venv --> to creating virtual environment.
-      
-         .\.venv\Scripts\activate --> to activate virtual environment.
+         python -m venv .venv --> Creating virtual environment.
+        
+         .\.venv\Scripts\activate --> To activate virtual environment.
 
       * **Linux/Kali:**
    
-        python3 -m venv .venv --> to creating virtual environment.
+        python3 -m venv .venv --> Creating virtual environment.
 
-        source .venv/bin/activate --> to activate virtual environment.
+        source .venv/bin/activate --> To activate virtual environment.
 
 4. **Install Dependencies: Ensure you have Python installed, then run:**
 
