@@ -1,0 +1,13 @@
+.env
+*.env
+threat_intel.db
+*.db
+scans/*
+!scans/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+!.gitignore
