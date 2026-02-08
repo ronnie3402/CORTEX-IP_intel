@@ -24,6 +24,9 @@ CORTEX-IP_intel is a professional tool built for security analysts. It helps you
 
 
 ## 🚀 Quick Setup & Installation
+⚙️ Installation & Setup (Recommended)
+It is highly recommended to run this tool in a Virtual Environment to avoid dependency conflicts.
+
 Follow these steps to get CORTEX-IP_intel running on your system:
 1. **Clone the Repository:**
    ```bash
@@ -31,11 +34,22 @@ Follow these steps to get CORTEX-IP_intel running on your system:
    
    cd CORTEX-IP_intel
 
-2. **Install Dependencies: Ensure you have Python installed, then run:**
+2. **Create & Activate Virtual Environment:**
+      * **Windows:**
+         python -m venv .venv --> to creating virtual environment.
+      
+         .\.venv\Scripts\activate --> to activate virtual environment.
+
+      * **Linux/Kali:**
+        python3 -m venv .venv --> to creating virtual environment.
+
+        source .venv/bin/activate --> to activate virtual environment.
+
+4. **Install Dependencies: Ensure you have Python installed, then run:**
 
       pip install -r requirements.txt
 
-3. **Configure API Keys:**
+5. **Configure API Keys:**
 
       * Open .env.example and put your keys.
 
