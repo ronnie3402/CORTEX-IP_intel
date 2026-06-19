@@ -1,15 +1,24 @@
-**Copyright (c) 2026 Rohit (ronnie3402)** **CORTEX-IP_intel - https://github.com/ronnie3402/CORTEX-IP_intel** 
-
-**This project is for educational and security analysis purposes only.**
-
 # 🧠 CORTEX-IP_intel
-**A Fast and Smart Tool to Check IP Threat Intelligence**
 
-CORTEX-IP_intel is a professional tool built for security analysts. It helps you check many IP addresses quickly to see if they are safe or dangerous. It uses **AbuseIPDB** and **VirusTotal** APIs to get the best data.
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python"/>
+  <img src="https://img.shields.io/badge/API-VirusTotal%20%7C%20AbuseIPDB-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Focus-Threat%20Intelligence-red?style=flat-square"/>
+</p>
+
+> **A Fast and Smart Tool to Check IP Threat Intelligence**
+
+<img width="800" height="441" alt="ip intel" src="https://github.com/user-attachments/assets/5be6163b-f4d2-4abc-a6dc-0bf7e416db5e" />
 
 
+---
 
-## ✨ Best Features
+## Overview
+A fast, asynchronous, and smart IP Threat Intelligence tool built specifically for Security Analysts and Blue Teamers. CORTEX-IP_intel rapidly analyzes bulk IP addresses by querying the AbuseIPDB and VirusTotal APIs, generating consolidated risk scores and forensic reports.
+
+---
+
+## ✨ Features
 * **⚡ Very Fast:** It scans many IPs at the same time (Asynchronous).
 * **🧠 Smart Brain:** It calculates a "Risk Score" based on reports and engine detections.
 * **🗄️ Save Data:** It saves results in a local database (SQLite) so you don't call APIs again for the same IP.
@@ -22,6 +31,12 @@ CORTEX-IP_intel is a professional tool built for security analysts. It helps you
 
 * **📂 Session-Based Isolation:** Every scan session is saved in a unique timestamped folder to prevent data overwrite. Additionally, every generated report (CSV, JSON, TXT) inside the folder includes the Target IP and precise timestamp in its filename for perfect forensic tracking.
 
+---
+
+## Architecture
+CORTEX-IP_intel utilizes Python's `asyncio` for concurrent API requests and a local SQLite database for caching and TTL management. It features modular parsing engines to extract specific threat metrics from deeply nested JSON responses returned by enterprise threat intel providers. Every scan session isolates data into structured directories for strict forensic integrity.
+
+---
 
 ## 🚀 Quick Setup & Installation
 ⚙️ Installation & Setup (Recommended)
@@ -57,6 +72,8 @@ Follow these steps to get CORTEX-IP_intel running on your system:
 
       * Rename .env.example to .env.
 
+---
+
 ## 🖥️ How to Use
 
 **Launch the tool using the following command:**
@@ -70,6 +87,8 @@ Follow these steps to get CORTEX-IP_intel running on your system:
    *  **Bulk IPs:** Type multiple IPs separated by commas (e.g., 1.1.1.1, 8.8.8.8).
    *  **File Input:** Provide the path to a .txt file containing a list of IPs.
 
+---
+
 ## 📂 Report Organization
 **Instead of just saving data, CORTEX-IP_intel creates a professional forensic audit trail. Every scan session is isolated in a unique folder (e.g., batch_20260209_011500) containing:**
 
@@ -79,6 +98,30 @@ Follow these steps to get CORTEX-IP_intel running on your system:
 
 * ***🛡️ TXT Forensic Reports:*** Individual, deep-dive forensic files for every IP. Each file (e.g., report_1.1.1.1_timestamp.txt) contains full metadata, provider trust scores, and automated analyst recommendations.
 
-**Copyright (c) 2026 Rohit (ronnie3402)** **CORTEX-IP_intel - https://github.com/ronnie3402/CORTEX-IP_intel** 
+---
 
+## 🧠 Technical Learnings
 
+Building CORTEX-IP_intel helped me strengthen several practical cybersecurity and software engineering skills:
+
+- **Threat Intelligence Integration** using AbuseIPDB and VirusTotal APIs.
+- **Asynchronous Programming** for high-performance concurrent IP analysis.
+- **SQLite-based Caching** to reduce API consumption and improve response times.
+- **Risk Scoring** and correlation of intelligence data from multiple providers.
+- **Automated Report Generation** in CSV, JSON, and TXT formats.
+- **Secure Handling of API Keys** using environment variables.
+- **Designing Forensic-Friendly Output Structures** for SOC and Incident Response workflows.
+
+---
+
+## 📜 License
+
+This project is for educational and security analysis purposes only. 
+Licensed under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Author
+
+**Rohit** — Built for the cybersecurity community.
+*Copyright (c) 2026 Rohit (ronnie3402)*
