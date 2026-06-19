@@ -98,6 +98,11 @@ Follow these steps to get CORTEX-IP_intel running on your system:
 
 * ***🛡️ TXT Forensic Reports:*** Individual, deep-dive forensic files for every IP. Each file (e.g., report_1.1.1.1_timestamp.txt) contains full metadata, provider trust scores, and automated analyst recommendations.
 
+## Sample Output
+
+<img width="1680" height="826" alt="ip intel2" src="https://github.com/user-attachments/assets/2198fb0f-5544-4a26-aa1d-c61843cd7aaf" />
+
+
 ---
 
 ## 🧠 Technical Learnings
